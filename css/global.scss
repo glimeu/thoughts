@@ -14,6 +14,7 @@ body {
 
   background-color: #f5f5f5;
 
+  color: #e1e1e6;
   font-family: "JetBrains Mono", monospace;
 
   &::-webkit-scrollbar {
@@ -44,70 +45,60 @@ a {
 }
 
 .display-heavy {
-  color: #e1e1e6;
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
 }
 
 .display-light {
-  color: #e1e1e6;
   font-weight: normal;
   font-size: 36px;
   line-height: 48px;
 }
 
 .headline-heavy {
-  color: #e1e1e6;
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
 }
 
 .headline-light {
-  color: #e1e1e6;
   font-weight: normal;
   font-size: 24px;
   line-height: 32px;
 }
 
 .title-heavy {
-  color: #e1e1e6;
   font-weight: bold;
   font-size: 20px;
   line-height: 28px;
 }
 
 .title-light {
-  color: #e1e1e6;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
 }
 
 .subheader-heavy {
-  color: #e1e1e6;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
 }
 
 .subheader-light {
-  color: #e1e1e6;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
 }
 
 .body-heavy {
-  color: #e1e1e6;
   font-weight: bold;
   font-size: 14px;
   line-height: 20px;
 }
 
 .body-light {
-  color: #e1e1e6;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
