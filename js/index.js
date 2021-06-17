@@ -7,28 +7,6 @@ const months = Array.from({ length: 12 }, (_, i) =>
     .map((char, charI) => (charI === 0 ? char.toUpperCase() : char))
     .join("")
 );
-/* const logs = [
-  {
-    date: "16-06-2021",
-    content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nam animi neque laborum perferendis aliquid, labore a ratione voluptatibus ut modi nesciunt ea totam. Quisquam voluptatibus at mollitia nisi amet!",
-  },
-  {
-    date: "15-06-2021",
-    content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nam animi neque laborum perferendis aliquid, labore a ratione voluptatibus ut modi nesciunt ea totam. Quisquam voluptatibus at mollitia nisi amet!",
-  },
-  {
-    date: "14-06-2021",
-    content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nam animi neque laborum perferendis aliquid, labore a ratione voluptatibus ut modi nesciunt ea totam. Quisquam voluptatibus at mollitia nisi amet!",
-  },
-  {
-    date: "13-06-2021",
-    content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nam animi neque laborum perferendis aliquid, labore a ratione voluptatibus ut modi nesciunt ea totam. Quisquam voluptatibus at mollitia nisi amet!",
-  },
-]; */
 
 async function onReady() {
   const mainElem = document.querySelector("body main");
