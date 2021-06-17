@@ -32,9 +32,7 @@ const months = Array.from({ length: 12 }, (_, i) =>
 
 async function onReady() {
   const mainElem = document.querySelector("body main");
-  const logs = await fetch(
-    "https://miguel5g.github.io/changelog/data.json"
-  ).then((res) => res.json());
+  const logs = await fetch("./data.json").then((res) => res.json());
 
   logs.forEach((log) => {
     const date = log.date.split("-").map((str) => +str);
