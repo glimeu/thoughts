@@ -38,20 +38,49 @@ body {
     margin: 0 auto;
     margin-top: 12px;
 
-    div {
+    form {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex: 1;
 
-      img {
-        width: 320px;
-        margin-bottom: 16px;
+      width: 100%;
+      max-width: 512px;
+      margin: auto;
+      padding: 16px;
+
+      background: var(--black-light);
+      border-radius: 4px;
+
+      div.input-group {
+        display: flex;
+        flex-direction: column;
       }
 
-      strong {
-        margin-bottom: 8px;
+      label {
+        margin-bottom: 4px;
+      }
+
+      input,
+      textarea {
+        max-width: 100%;
+        margin-bottom: 16px;
+        padding: 4px;
+
+        background: none;
+        border: 1px solid rgba($color: #fff, $alpha: 0.5);
+        border-radius: 4px;
+
+        color: #fff;
+
+        outline: none;
+      }
+
+      textarea {
+        min-width: 100%;
+        min-height: 128px;
+      }
+
+      button {
+        cursor: pointer;
       }
     }
   }
@@ -59,23 +88,12 @@ body {
   & > footer {
     display: flex;
     justify-content: center;
-    align-items: center;
 
     width: 100%;
     padding: 12px;
     margin-top: 12px;
 
     background: var(--black-light);
-
-    & > a {
-      margin-left: 16px;
-      padding: 4px;
-
-      background: rgba($color: #fff, $alpha: 0.13);
-      border-radius: 4px;
-
-      text-decoration: none;
-    }
   }
 
   section {

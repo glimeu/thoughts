@@ -53,7 +53,7 @@ body main {
   margin-top: 12px;
 }
 
-body main div {
+body main form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,24 +61,47 @@ body main div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 100%;
+  max-width: 512px;
+  margin: auto;
+  padding: 16px;
+  background: var(--black-light);
+  border-radius: 4px;
 }
 
-body main div img {
-  width: 320px;
+body main form div.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main form label {
+  margin-bottom: 4px;
+}
+
+body main form input,
+body main form textarea {
+  max-width: 100%;
   margin-bottom: 16px;
+  padding: 4px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
 }
 
-body main div strong {
-  margin-bottom: 8px;
+body main form textarea {
+  min-width: 100%;
+  min-height: 128px;
+}
+
+body main form button {
+  cursor: pointer;
 }
 
 body > footer {
@@ -88,21 +111,10 @@ body > footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   padding: 12px;
   margin-top: 12px;
   background: var(--black-light);
-}
-
-body > footer > a {
-  margin-left: 16px;
-  padding: 4px;
-  background: rgba(255, 255, 255, 0.13);
-  border-radius: 4px;
-  text-decoration: none;
 }
 
 body section {
@@ -132,4 +144,4 @@ body section strong {
 body section strong span {
   color: rgba(255, 255, 255, 0.64);
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=new.css.map */
