@@ -16,19 +16,26 @@ body > header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 12px;
   background: var(--black-light);
 }
 
 body > header img {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   margin-right: 12px;
   border-radius: 50%;
 }
 
-body > main {
+body > header h1 {
+  font-size: 10px;
+}
+
+body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,6 +51,34 @@ body > main {
   padding: 24px;
   margin: 0 auto;
   margin-top: 12px;
+}
+
+body main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body main div img {
+  width: 320px;
+  margin-bottom: 16px;
+}
+
+body main div strong {
+  margin-bottom: 8px;
 }
 
 body > footer {

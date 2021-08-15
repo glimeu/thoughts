@@ -12,14 +12,14 @@ async function onReady() {
   const mainElem = document.querySelector("body main");
   const logs = await fetch("./data.json").then((res) => res.json());
 
-  logs.forEach((log) => {
+  logs.forEach((log, index) => {
     const date = log.date.split("-").map((str) => +str);
     const logElem = createElement(
       `${date[0]} de ${months[date[1]]} de ${date[2]}`,
       log.content
     );
 
-    mainElem.innerHTML = mainElem.innerHTML + logElem;
+    mainElem.innerHTML = index === 0 ? logElem : mainElem.innerHTML + logElem;
   });
 }
 
