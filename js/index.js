@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", onReady);
 
 async function onReady() {
   const mainElem = document.querySelector("body main");
-  const logs = await fetch("https://thoughts-5g.herokuapp.com/thoughts").then(
-    (res) => res.json()
-  );
+  const { data: logs } = await fetch(
+    "https://thoughts-5g.herokuapp.com/api/posts"
+  ).then((res) => res.json());
 
   moment.locale("pt-BR");
 
